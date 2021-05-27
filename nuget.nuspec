@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-  <metadata>
-    <id>datatables.net-searchbuilder-zf</id>
-    <version>1.0.0</version>
-    <description>SearchBuilder for DataTables</description>
-    <authors>SpryMedia Ltd</authors>
-    <projectUrl>http://datatables.net</projectUrl>
-    <license type="expression">MIT</license>
-    <tags>searchbuilder DataTables jQuery table Foundation</tags>
-    <repository type="git" url="https://github.com/DataTables/Dist-DataTables-SearchBuilder-Foundation.git"/>
-    <dependencies>
-      <dependency id="jquery" version="1.7.0"/>
-      <dependency id="datatables.net" version="1.10.15"/>
-      <dependency id="datatables.net-searchbuilder" version="1.0.0"/>
-      <dependency id="foundation" version="5.0.0"/>
-    </dependencies>
-    <contentFiles>
-      <files include="**/*" buildAction="Content"/>
-    </contentFiles>
-  </metadata>
-  <files>
-    <file src="js/searchbuilder.foundation.js" target="content\Scripts"/>
-    <file src="js/searchbuilder.foundation.min.js" target="content\Scripts"/>
-    <file src="css/searchbuilder.foundation.css" target="content\Content"/>
-    <file src="css/searchbuilder.foundation.min.css" target="content\Content"/>
-    <file src="js/searchbuilder.foundation.js" target="contentFiles\any\any\wwwroot\js"/>
-    <file src="js/searchbuilder.foundation.min.js" target="contentFiles\any\any\wwwroot\js"/>
-    <file src="css/searchbuilder.foundation.css" target="contentFiles\any\any\wwwroot\css"/>
-    <file src="css/searchbuilder.foundation.min.css" target="contentFiles\any\any\wwwroot\css"/>
-  </files>
+    <metadata>
+        <version>1.0.1</version>
+        <id>datatables.net-searchbuilder-zf</id>
+        <description>This is SearchBuilder for DataTables with styling for [Foundation](https://get.foundation/)</description>
+        <repository type="git" url="https://github.com/DataTables/Dist-DataTables-SearchBuilder-Foundation.git"/>
+        <authors>SpryMedia Ltd</authors>
+        <projectUrl>http://datatables.net</projectUrl>
+        <license type="expression">MIT</license>
+        <tags>SearchBuilder  Filtering  Search  Foundation  Datatables jQuery table</tags>
+        <dependencies>
+            <dependency id="datatables.net-searchbuilder" version=">=1.0.1"/>
+            <dependency id="datatables.net-zf" version=">=1.10.24"/>
+        </dependencies>
+        <contentFiles>
+            <files include="**/*" buildAction="Content"/>
+        </contentFiles>
+    </metadata>
+    <files>
+        <file src="js/searchBuilder.foundation.js" target="content\Scripts"/>
+        <file src="js/searchBuilder.foundation.js" target="contentFiles\any\any\wwwroot\js"/>
+        <file src="js/searchBuilder.foundation.min.js" target="content\Scripts"/>
+        <file src="js/searchBuilder.foundation.min.js" target="contentFiles\any\any\wwwroot\js"/>
+        <file src="css/searchBuilder.foundation.css" target="content\Content"/>
+        <file src="css/searchBuilder.foundation.css" target="contentFiles\any\any\wwwroot\css"/>
+        <file src="css/searchBuilder.foundation.min.css" target="content\Content"/>
+        <file src="css/searchBuilder.foundation.min.css" target="contentFiles\any\any\wwwroot\css"/>
+        <file src="types/searchBuilder.foundation.d.ts" target="content\Scripts"/>
+        <file src="types/searchBuilder.foundation.d.ts" target="contentFiles\any\any\wwwroot\js"/>
+    </files>
 </package>
+

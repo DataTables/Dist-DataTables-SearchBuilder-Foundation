@@ -4,6 +4,9 @@
 (function () {
     'use strict';
 
+    /*! Foundation ui integration for DataTables' SearchBuilder
+     * ©2016 SpryMedia Ltd - datatables.net/license
+     */
     (function (factory) {
         if (typeof define === 'function' && define.amd) {
             // AMD
@@ -18,9 +21,11 @@
                     root = window;
                 }
                 if (!$ || !$.fn.dataTable) {
+                    // eslint-disable-next-line @typescript-eslint/no-var-requires
                     $ = require('datatables.net-zf')(root, $).$;
                 }
                 if (!$.fn.dataTable.searchBuilder) {
+                    // eslint-disable-next-line @typescript-eslint/no-var-requires
                     require('datatables.net-searchbuilder')(root, $);
                 }
                 return factory($, root, root.document);
@@ -31,16 +36,16 @@
             factory(jQuery, window, document);
         }
     }(function ($, window, document) {
-        var DataTable = $.fn.dataTable;
-        $.extend(true, DataTable.SearchBuilder.classes, {
+        var dataTable = $.fn.dataTable;
+        $.extend(true, dataTable.SearchBuilder.classes, {
             clearAll: 'button secondary dtsb-clearAll'
         });
-        $.extend(true, DataTable.Group.classes, {
+        $.extend(true, dataTable.Group.classes, {
             add: 'button secondary dtsb-add',
             clearGroup: 'button secondary dtsb-clearGroup',
             logic: 'button secondary dtsb-logic'
         });
-        $.extend(true, DataTable.Criteria.classes, {
+        $.extend(true, dataTable.Criteria.classes, {
             condition: 'form-control dtsb-condition',
             data: 'form-control dtsb-data',
             "delete": 'button secondary dtsb-delete',
@@ -48,7 +53,7 @@
             right: 'button secondary dtsb-right',
             value: 'form-control dtsb-value'
         });
-        return DataTable.searchPanes;
+        return dataTable.searchPanes;
     }));
 
 }());

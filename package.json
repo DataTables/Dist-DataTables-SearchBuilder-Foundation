@@ -1,35 +1,48 @@
 {
     "name": "datatables.net-searchbuilder-zf",
+    "description": "SearchBuilder for DataTables with styling for [Foundation](https://get.foundation/)",
+    "main": "js/searchBuilder.foundation.js",
+    "style": "css/searchBuilder.foundation.css",
     "version": "1.0.1",
-    "description": "Advanced Search Builder for DataTables with styling for Foundation",
     "files": [
         "css/**/*.css",
         "js/**/*.js"
     ],
-    "main": "js/searchBuilder.foundation.js",
-    "style": "css/searchBuilder.foundation.css",
     "keywords": [
-        "Search",
-        "Filtering",
-        "DataTables",
+        "SearchBuilder",
+ "Filtering",
+ "Search",
+        "Foundation",
+        "Datatables",
         "jQuery",
         "table",
-        "Foundation"
+        "filter",
+        "sort"
     ],
+    "dependencies": {
+        "datatables.net-searchbuilder": ">=1.0.1",
+        "datatables.net-zf": ">=1.10.24",
+        "jquery": ">=1.7"
+    },
+    "moduleType": [
+        "globals",
+        "amd",
+        "node"
+    ],
+    "ignore": [
+        "composer.json",
+        "datatables.json",
+        "package.json"
+    ],
+    "author": {
+        "name": "SpryMedia Ltd",
+        "url": "http://datatables.net"
+    },
     "homepage": "https://datatables.net",
     "bugs": "https://datatables.net/forums",
     "license": "MIT",
-    "author": {
-        "name": "SpryMedia ltd",
-        "url": "http://datatables.net"
-    },
-    "dependencies": {
-        "jquery": ">=1.7",
-        "datatables.net-zf": "^1.10.15",
-        "datatables.net-searchbuilder": "1.0.1"
-    },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/DataTables/Dist-DataTables-SearchBuilder-Foundation.git"
+        "url": "https://github.com/DataTables/Dist-DataTables-SearchBuilder-Foundation.git"
     }
 }
