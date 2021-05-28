@@ -19,7 +19,7 @@ npm install datatables.net-searchbuilder-zf
 
 ```
 var $ = require( 'jquery' );
-var dt = require( 'datatables.net-searchbuilder-zf}' )( window, $ );
+var dt = require( 'datatables.net-searchbuilder-zf' )( window, $ );
 ```
 
 ### bower
