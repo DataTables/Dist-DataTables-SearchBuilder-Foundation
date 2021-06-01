@@ -3,6 +3,7 @@
     "description": "SearchBuilder for DataTables with styling for [Foundation](https://get.foundation/)",
     "main": "js/searchBuilder.foundation.js",
     "style": "css/searchBuilder.foundation.css",
+    "types": "./types/searchBuilder.foundation.d.ts",
     "version": "1.0.1",
     "files": [
         "css/**/*.css",
