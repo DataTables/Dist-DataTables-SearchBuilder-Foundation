@@ -4,7 +4,7 @@
     "main": "js/searchBuilder.foundation.js",
     "style": "css/searchBuilder.foundation.css",
     "types": "./types/searchBuilder.foundation.d.ts",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "files": [
         "css/**/*.css",
         "js/**/*.js",
@@ -12,8 +12,8 @@
     ],
     "keywords": [
         "SearchBuilder",
- "Filtering",
- "Search",
+        "Filtering",
+        "Search",
         "Foundation",
         "Datatables",
         "jQuery",
