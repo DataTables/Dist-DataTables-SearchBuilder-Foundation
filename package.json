@@ -12,8 +12,8 @@
     ],
     "keywords": [
         "SearchBuilder",
-        "Filtering",
-        "Search",
+ "Filtering",
+ "Search",
         "Foundation",
         "Datatables",
         "jQuery",
@@ -22,8 +22,8 @@
         "sort"
     ],
     "dependencies": {
-        "datatables.net-searchbuilder": ">=1.1.0",
-        "datatables.net-zf": ">=1.10.25",
+        "datatables.net-searchbuilder": ">=1.2.2",
+        "datatables.net-zf": ">=1.11.3",
         "jquery": ">=1.7"
     },
     "moduleType": [
