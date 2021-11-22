@@ -105,9 +105,11 @@ div.dtsb-searchBuilder div.dtsb-titleRow div.dtsb-title {
 div.dtsb-searchBuilder div.dtsb-titleRow button.dtsb-clearAll {
   margin-bottom: 0px;
 }
-div.dtsb-searchBuilder div.dtsb-group div.dtsb-criteria select {
+div.dtsb-searchBuilder div.dtsb-group div.dtsb-criteria select.dtsb-dropDown {
   width: auto !important;
   margin-bottom: 0px;
+  padding-left: 0.5rem;
+  padding-right: 1.5rem;
 }
 div.dtsb-searchBuilder div.dtsb-group div.dtsb-criteria input {
   height: 2.4375rem;
