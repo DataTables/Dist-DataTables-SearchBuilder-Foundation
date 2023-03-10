@@ -6,7 +6,6 @@ import $ from 'jquery';
 import DataTable from 'datatables.net-zf';
 import SearchBuilder from 'datatables.net-searchbuilder';
 
-
 $.extend(true, DataTable.SearchBuilder.classes, {
     clearAll: 'button alert dtsb-clearAll'
 });
