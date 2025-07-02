@@ -5,7 +5,7 @@
     "module": "js/searchBuilder.foundation.mjs",
     "style": "css/searchBuilder.foundation.css",
     "types": "./types/searchBuilder.foundation.d.ts",
-    "version": "1.8.2",
+    "version": "1.8.3",
     "files": [
         "css/**/*.css",
         "js/**/*.js",
@@ -24,7 +24,7 @@
         "sort"
     ],
     "dependencies": {
-        "datatables.net-searchbuilder": "1.8.2",
+        "datatables.net-searchbuilder": "1.8.3",
         "datatables.net-zf": "^2",
         "jquery": ">=1.7"
     },
