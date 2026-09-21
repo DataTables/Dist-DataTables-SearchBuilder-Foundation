@@ -1,16 +1,15 @@
 {
     "name": "datatables.net-searchbuilder-zf",
     "description": "SearchBuilder for DataTables with styling for [Foundation](https://get.foundation/)",
-    "main": "js/searchBuilder.foundation.js",
-    "module": "js/searchBuilder.foundation.mjs",
-    "style": "css/searchBuilder.foundation.css",
+    "main": "./js/searchBuilder.foundation.js",
+    "module": "./js/searchBuilder.foundation.mjs",
+    "style": "./css/searchBuilder.foundation.css",
     "types": "./types/searchBuilder.foundation.d.ts",
     "version": "2.0.1",
     "files": [
-        "css/**/*.css",
-        "js/**/*.js",
-        "js/**/*.mjs",
-        "types/**/*.d.ts"
+        "js",
+        "css",
+        "types"
     ],
     "keywords": [
         "SearchBuilder",
@@ -36,5 +35,24 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/DataTables/SearchBuilder.git"
-    }
+    },
+    "exports": {
+        ".": {
+            "types": "./types/searchBuilder.foundation.d.ts",
+            "import": "./js/searchBuilder.foundation.mjs",
+            "default": "./js/searchBuilder.foundation.mjs",
+            "require": "./js/searchBuilder.foundation.js"
+        },
+        "./js/*": "./js/*",
+        "./css": {
+            "types": "./types/css.d.ts",
+            "default": "./css/searchBuilder.foundation.css"
+        },
+        "./css/*": {
+            "types": "./types/css.d.ts",
+            "default": "./css/*"
+        },
+        "./package.json": "./package.json"
+    },
+    "sideEffects": true
 }
