@@ -39,9 +39,10 @@
     "exports": {
         ".": {
             "types": "./types/searchBuilder.foundation.d.ts",
+            "style": "./css/searchBuilder.foundation.css",
             "import": "./js/searchBuilder.foundation.mjs",
-            "default": "./js/searchBuilder.foundation.mjs",
-            "require": "./js/searchBuilder.foundation.js"
+            "require": "./js/searchBuilder.foundation.js",
+            "default": "./js/searchBuilder.foundation.mjs"
         },
         "./js/*": "./js/*",
         "./css": {
